@@ -1,0 +1,4 @@
+* Please note that all default copyright laws apply to this repository. 
+* This means that I, Mark Leppa, retain all rights to the source code contained in this repository.
+* If you want to reproduce, distribute, or create derivative works from this work contact me for written permission.
+* I can be reached at mark.leppa@gmail.com
