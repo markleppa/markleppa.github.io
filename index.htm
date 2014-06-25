@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="utf-8">
+  <title>Mark Leppa: Personal Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website of Mark Leppa"
+  <meta name="keywords" content="Programming,Software Development,Full Stack Software Developer,Full Stack Software Engineer,Full Stack Application Developer,Full Stack Programmer,C#,HTML5,IxD,Interaction Design,CSS3,XML,JavaScript,jQuery,MongoDB,MySQL,PHP">
+  <meta name="author" content="Mark Leppa">
+
+  <link rel="shortcut icon" href="http://www.markleppa.com/favicon.ico">
+  <!-- Bootstrap core CSS -->
+  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans&effect=emboss|outline|3d|3d-float' rel='stylesheet' type='text/css'>
+  <!-- Font Awesome -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Custom sticky footer -->
+  <link href="http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+  <!--Contact form CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS Animations Cheat Sheet-->
+  <!--link rel="stylesheet" href="./css/animations.css"-->
+  <!-- Wrap, cloud, enlighten-->
+  <!--link rel="stylesheet" type="text/css" href="./css/see.css"-->
+
+  <style>
+html,body {height:100%;} /*makes sticky footer come to foot of first container*/
+
+  body {
+    margin:0;padding:0;
+    margin-top:0px;
+    background-color:#000;
+    background-image:url('stars-700.gif');
+    background-size:contain;
+    background-attachment:fixed;
+    font-family: 'Open Sans', sans-serif;
+    width    : 100%;
+    height   : 100%;
+    min-width: 100%;
+    /*overflow : hidden;*/
+    /*min-height:2000px;*/
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Quicksand', serif; 
+    font-weight: 400; 
+    color: white; 
+    margin-top: 0px;
+  }
+
+  h1  {
+    font-size: 72px;
+    text-align: center;
+  }
+  h2,h3, h4, h5  {
+    text-align: center;
+  }
+  h4{
+    font-size: 20px;
+  }
+
+    /* Landscape phones and smaller */
+    @media (max-width: 800px) {
+      h1  {font-size: 30px;} 
+      h3  { font-size: 14px;}   
+    }
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 900px) {
+      h1  {font-size: 36px;}
+      h3  { font-size: 16px;} 
+    }
+    /* Portrait tablets and small desktops */
+    @media (min-width: 901px) and (max-width: 999px) {
+      h1  {font-size: 48px;}
+      h3  { font-size: 20px;} 
+    }
+    /* Portrait tablets and medium desktops */
+    @media (min-width: 1000px) and (max-width: 1199px) {
+      h1  {font-size: 60px;}
+      h3  { font-size: 22px;} 
+    }
+    /* Large desktops and laptops */
+    @media (min-width: 1200px) {
+      h1  {font-size: 72px;}
+      h3  {font-size: 24px;} 
+    }
+
+    #headernav {
+      height:55px;
+      }
+    /* below applied to dropdown */
+    .ast li a {
+      color: rgba(205,205,205,.7);
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 0px;/*17px mobfir*/
+      margin-right: 5px;
+      margin-bottom: 0px;/*17px mobfir*/
+      margin-left: 5px;
+    }
+    .ast li a:hover {
+      background-color:  transparent;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 4px;
+    }
+    .ast li.active a,
+    .ast li.active a:hover {
+      background-color:  #2e90f2;
+      border: 1px solid #444;
+      border-radius: 4px;
+    }
+
+  @media (min-width: 560px) {
+
+      #headernav {
+        height:80px;
+      }
+      h4{
+        font-size: 26px;
+      }
+      .navbar-brand {
+        padding: 25px;
+      }
+      .navbar-nav.navbar-right:last-child {
+        margin-right: 0px;
+      }
+      .navbar-header {
+        float: left;
+      }
+      .navbar-toggle {
+        display: none;
+      }
+      .navbar-collapse {
+        border-top: 0 none;
+        box-shadow: none;
+        width: auto;
+      }
+      .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+      }
+      .navbar-nav {
+        float: right !important;
+        margin: 0;
+      }
+      .navbar-nav>li {
+        float: left;
+      }
+      .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      element.style {
+        margin-top: 8px;/*overrides margin-top*/
+      }
+      .ast li a {
+        color: rgba(205,205,205,.7);
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-top: 17px;/*17px mobfir*/
+        margin-right: 5px;
+        margin-bottom: 5px;/*17px mobfir*/
+      }
+  }
+
+    .glyphicon-chevron-down {
+      color: white;
+    }
+
+    .glyphicon-chevron-down:hover {
+      color: white;
+    }
+
+    .btn-lg{
+      padding: 15px 14px 8px;
+      border: 2px solid #2e90f2;
+      border-radius: 27px;
+      background-color: transparent;
+      outline: 0;
+    }
+
+    .btn-lg:focus {
+      outline: 0;
+      background-color: transparent;
+      border: 2px solid #2e90f2;
+    }
+
+    .btn-lg:hover {
+      background-color: #2e90f2;
+      outline: 0;
+    }
+
+    /* below offset for html,body {height:100%;} */ 
+    #footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:60px;
+    }
+    #navfoot{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin-bottom: 60px;
+    }
+    #navfootp { 
+    position:inherit;
+    bottom:0;
+    left:0;
+    right:0;
+    margin-bottom: 60px;
+    }
+    
+    #hello, #projects, #blog, #contact {
+      height: 100%; 
+      padding-top: 100px;
+    }
+
+    #hello { background: -moz-linear-gradient(top,  hsla(240,100%,10%,0) 22%, hsla(240,100%,10%,0.5) 50%, hsla(240,100%,18%,0.66) 66%, hsla(240,100%,31%,0.9) 90%, hsla(240,100%,31%,0.9) 91%, hsla(223,100%,50%,0.9) 94%, hsla(0,0%,100%,0.9) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(22%,hsla(240,100%,10%,0)), color-stop(50%,hsla(240,100%,10%,0.5)), color-stop(66%,hsla(240,100%,18%,0.66)), color-stop(90%,hsla(240,100%,31%,0.9)), color-stop(91%,hsla(240,100%,31%,0.9)), color-stop(94%,hsla(223,100%,50%,0.9)), color-stop(100%,hsla(0,0%,100%,0.9))),  -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,hsla(0,0%,0%,0.84)), color-stop(28%,hsla(0,0%,0%,0.73)), color-stop(43%,hsla(0,0%,0%,0.49)), color-stop(51%,hsla(0,0%,0%,0.36)), color-stop(73%,hsla(0,0%,0%,0))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  hsla(240,100%,10%,0) 22%,hsla(240,100%,10%,0.5) 50%,hsla(240,100%,18%,0.66) 66%,hsla(240,100%,31%,0.9) 90%,hsla(240,100%,31%,0.9) 91%,hsla(223,100%,50%,0.9) 94%,hsla(0,0%,100%,0.9) 100%), -webkit-radial-gradient(center, ellipse cover,  hsla(0,0%,0%,0.84) 21%,hsla(0,0%,0%,0.73) 28%,hsla(0,0%,0%,0.49) 43%,hsla(0,0%,0%,0.36) 51%,hsla(0,0%,0%,0) 73%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  hsla(240,100%,10%,0) 22%,hsla(240,100%,10%,0.5) 50%,hsla(240,100%,18%,0.66) 66%,hsla(240,100%,31%,0.9) 90%,hsla(240,100%,31%,0.9) 91%,hsla(223,100%,50%,0.9) 94%,hsla(0,0%,100%,0.9) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  hsla(240,100%,10%,0) 22%,hsla(240,100%,10%,0.5) 50%,hsla(240,100%,18%,0.66) 66%,hsla(240,100%,31%,0.9) 90%,hsla(240,100%,31%,0.9) 91%,hsla(223,100%,50%,0.9) 94%,hsla(0,0%,100%,0.9) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  hsla(240,100%,10%,0) 22%,hsla(240,100%,10%,0.5) 50%,hsla(240,100%,18%,0.66) 66%,hsla(240,100%,31%,0.9) 90%,hsla(240,100%,31%,0.9) 91%,hsla(223,100%,50%,0.9) 94%,hsla(0,0%,100%,0.9) 100%), background: radial-gradient(ellipse at center,  hsla(0,0%,0%,0.84) 21%,hsla(0,0%,0%,0.73) 28%,hsla(0,0%,0%,0.49) 43%,hsla(0,0%,0%,0.36) 51%,hsla(0,0%,0%,0) 73%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000033', endColorstr='#e6ffffff',GradientType=0 ); /* IE6-9 */
+
+/*background: -moz-radial-gradient(center, ellipse cover,  hsla(0,0%,0%,0.84) 21%, hsla(0,0%,0%,0.73) 28%, hsla(0,0%,0%,0.49) 43%, hsla(0,0%,0%,0.36) 51%, hsla(0,0%,0%,0) 73%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,hsla(0,0%,0%,0.84)), color-stop(28%,hsla(0,0%,0%,0.73)), color-stop(43%,hsla(0,0%,0%,0.49)), color-stop(51%,hsla(0,0%,0%,0.36)), color-stop(73%,hsla(0,0%,0%,0)));
+background: -webkit-radial-gradient(center, ellipse cover,  hsla(0,0%,0%,0.84) 21%,hsla(0,0%,0%,0.73) 28%,hsla(0,0%,0%,0.49) 43%,hsla(0,0%,0%,0.36) 51%,hsla(0,0%,0%,0) 73%);
+background: -o-radial-gradient(center, ellipse cover,  hsla(0,0%,0%,0.84) 21%,hsla(0,0%,0%,0.73) 28%,hsla(0,0%,0%,0.49) 43%,hsla(0,0%,0%,0.36) 51%,hsla(0,0%,0%,0) 73%);
+background: -ms-radial-gradient(center, ellipse cover,  hsla(0,0%,0%,0.84) 21%,hsla(0,0%,0%,0.73) 28%,hsla(0,0%,0%,0.49) 43%,hsla(0,0%,0%,0.36) 51%,hsla(0,0%,0%,0) 73%);
+background: radial-gradient(ellipse at center,  hsla(0,0%,0%,0.84) 21%,hsla(0,0%,0%,0.73) 28%,hsla(0,0%,0%,0.49) 43%,hsla(0,0%,0%,0.36) 51%,hsla(0,0%,0%,0) 73%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6000000', endColorstr='#00000000',GradientType=1 );*/
+
+
+    }
+
+    #projects {
+      background-image:url('earthbelow.jpg');
+      background-size:cover;
+    }
+
+    #map-canvas {
+      width:100%;
+      height:300px;
+    }
+
+    .nav-pills > li > a {
+      margin-right:2px;
+    }
+
+    }
+
+  .colorshift {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+  }
+
+  @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+
+  .thumbnail {
+  display: block;
+  padding: 0px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: rgba(44, 44, 44, 0.701961);
+  border: 4px solid rgba(120,120,120,0.5);
+  border-radius: 8px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  }
+         
+  </style>
+
+<!--[if lt IE 9]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+<script type="text/javascript" src= "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<!--contact form script-->
+<script src="app.js"></script>
+
+<!-- Compiled and minified Bootstrap JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- CSS Animations Library-->
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+<!-- Google Maps API -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2HNskuNCRt1HFKkxRLV3RfXf2PQmuyqc&sensor=true">
+</script>
+<script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(41, -108),
+          zoom: 3,
+          scrollwheel: false,
+          mapTypeId:google.maps.MapTypeId.HYBRID
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+          var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(37.790318, -122.400682),
+          map: map,
+          title: '548 Market St, #13562 San Francisco, CA 94104'
+          });
+
+          var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(44.983088, -93.266813),
+          map: map,
+          title: 'Minneapolis, MN'
+          });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</head>
+  
+<body onLoad="parallax()" data-spy="scroll" data-target="#marknav">
+  <div id="headernav" class="navbar navbar-inverse navbar-fixed-top" role="navigation"  style="background: rgba(44,44,44,0.7);">
+    <div class="container-fluid">
+      <div class="navbar-header navbar-left">
+        <!--a class="navbar-brand visible-xs" href="http://www.markleppa.com/#"  title="Home">
+          <p>M</p></a-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#marknav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.markleppa.com/#"  title="Home">
+          <h4>Mark <span style="color: grey;">Leppa</span></h4></a>
+      </div>
+      <div class="collapse navbar-collapse" id="marknav">
+        <ul class="nav navbar-nav ast navbar-right"> <!-- add ast for pills-->
+          <li><a href="#hello">Hello</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!--li><a href="#blog">Blog</a></li-->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!--h1 align="center">Test + <span clas#2e90f2s="visible-xs">SIZE XS</span><span class="visible-sm">SIZE SM</span><span class="visible-md">SIZE MD</span><span class="visible-lg">SIZE LG</span></h1-->
+
+<div  class="container-fluid" style="height: 100%;">
+
+  <div id="hello" class="row" style="z-index:2; margin-top: -1px;"><!-- margin-top: -1px; fires retractable header-->
+    <div class="col-xs-12">
+      <span class="visible-xs"><br></span><span class="visible-sm"><br><br></span><span class="visible-md"><br><br><br><br></span><span class="visible-lg"><br><br><br><br><br><br></span>
+      <h1 align="center" class="animate1" style="display:none;"><span style="color: #2e90f2;">Hello</span></h1></br>
+      <h3 class="animate2" style="display:none;">My name is Mark Leppa.<br>
+        <HR COLOR="darkgray" SIZE="2px" WIDTH="10%" style="border-top: 2px solid #333;"></h3>
+        <h3 style="line-height: 1.3;"><span class="animate3" style="display:none; color: gray;">I am a <span style="color: white;">full stack software developer</span></span><br>
+        <span class="animate4" style="display:none; color: gray;">endeavoring to make a difference</span><br>
+        <span class="animate5" style="display:none; color: gray;">building <span style="color: white;">innovative web applications.</span></span></h3>
+    </div><!-- col-xs-12 -->
+  </div><!-- row -->
+
+    <!--div id="navfoot" class="row" style="text-align:center;"><span class="visible-sm visible-md visible-lg">
+      <a href="#projects" style="text-decoration: none;">
+        <button type="button" class="btn btn-default btn-lg" style="text-align:center;">
+          <i class="fa fa-angle-down fa-3x"></i>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+      </a>
+      <a href="#projects" style="text-decoration: none;"><h6><strong>SCROLL DOWN</strong></h6></a></span>
+    </div-->
+
+  <div id="projects"  class="row" style="background-color: #111; z-index:3; height: 100%; margin-top: -1px;">
+    <div class="col-xs-12">
+      <h1 align="center"><span style="color: #8AC007;">Projects</span></h1></br>
+          <!--span style="color: grey;">This site is under development currently. I will be adding other projects to this space soon.</span><br-->
+        <!--div class="clear"></div-->
+        <!--div id="navfootp" class="row" style="text-align:center;">
+        <a href="#blog" style="text-decoration: none;">
+          <button type="button" class="btn btn-default btn-lg" style="text-align:center;">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </button>
+        </a>
+      </div-->
+      <div class="col-sm-4">
+        <h3>Astronomical Sun to Earth Zoomable Model</h3>
+        <a href="#" class="thumbnail">
+          <img src="" alt="Coming Soon" height="600px" width="100%">
+        </a>
+      </div> 
+      <div class="col-sm-4">
+        <h3>Personal Transformation and Growth Application</h3>
+        <a href="#" class="thumbnail">
+          <img src="" alt="Coming Soon" height="600px" width="100%">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <h3>Visualizations for Personal Development</h3>
+        <a href="#" class="thumbnail">
+          <img src="" alt="Coming Soon" height="600px" width="100%">
+        </a>
+        <br><br><!--temporary to keep thumbnail padded on bottom-->
+      </div>
+    </div> <!-- col-xs-12 -->
+  </div><!-- row -->
+
+  <!--div id="blog" class="row" style="background-color: #222; z-index:4;">
+      <h1 align="center"><span style="color: gold;">Blog</span></h1>
+          <h3>Ideas I have to share.<br><br>
+            <HR COLOR="darkgray" SIZE="2px" WIDTH="10%" style="border-top: 2px solid #333;"><br>
+              <span style="color: grey;">I will be posting blog articles concerning software development, personal<br> productivity, social entrepreneurship among other topics here soon.</span><br></h3>
+  </div-->
+
+  <div id="contact" class="row" style="background-color: #333; z-index:5;">
+    <!--div id="map-canvas"/-->
+        <h1 align="center"><span style="color: darkorange; z-index:6;">Contact</span></h1><br>
+      <div class="col-sm-6"  style="background-color: #333;">
+        <div class="row">
+          <div class="col-xs-6">
+            <h3>Email Address:<br>
+            <small><script language="JavaScript">
+            var username = "mark.leppa";
+            var hostname = "gmail.com";
+            var linktext = username + "@" + hostname ;
+            document.write("<a target='_blank' href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+            </script></small></h3><br>
+            <h3>Phone: <small><script language="JavaScript">
+            var area = "415";
+            var number = "702-0125";
+            var phone = "(" + area + ") " + number ;
+            document.write(phone);
+            </script></small></h3>
+          </div>
+          <div class="col-xs-6">
+            <h3>Mailing Address:<br><br>
+            <small>548 Market St #13562<br>
+            San Francisco, CA 94104</small></h3>
+          </div>
+        </div>
+        <br>
+        <h3>I live in California and Minnesota</h3>
+        <div id="map-canvas"></div>
+      </div>
+      <div class="col-sm-6" style="background-color: #333;">
+        <h3>Send a Message</h3>
+        <div id="contact-wrapper">
+          <div id="form-messages"></div>   
+            <form id="ajax-contact" method="post" action="mailer.php" role="form">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea  rows="6" id="message" name="message" placeholder="Message" required></textarea>
+              </div>
+                <button type="submit" class="btn btn-default">Send Message</button>
+                <br><br><br><br>
+            </form>
+          </div>
+        </div>
+
+    <!--img id="earthme" src="whole-east-earth.gif" alt="Earth" style="position: absolute; float:center; z-index:0; top:100%;left:25%; overflow: hidden;"-->
+  </div> <!-- row -->
+
+</div> <!--container-fluid-->
+
+<div id="footer" style="background-color: rgba(55,55,55,0.5);">
+      <div class="container">
+        <br><p style="color: grey; text-align: center; font-family: Quicksand;" class="font-effect-3d-float">Mark Leppa © 2014</p>
+      </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+      e.preventDefault();
+   
+      var target = this.hash,
+      $target = $(target);
+   
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top+1
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  setTimeout(function () {
+      $('.animate1').show().addClass('animated swing');}, 300
+  );
+  setTimeout(function () {
+      $('.animate2').show().addClass('animated fadeInDown');}, 1000
+  );
+  setTimeout(function () {
+      $('.animate3').show().addClass('animated fadeInUp');}, 2000
+  );
+  setTimeout(function () {
+      $('.animate4').show().addClass('animated fadeInUp');}, 3000
+  );
+  setTimeout(function () {
+      $('.animate5').show().addClass('animated fadeInUp');}, 4000
+  );
+}); 
+</script>
+
+<script type="text/javascript">
+$(function(){
+    $('#headernav').data('size','big');
+});
+
+/*         color: rgba(205,205,205,.7);
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-top: 17px;
+        margin-right: 5px;
+        margin-bottom: 5px;*/
+
+$(window).scroll(function(){
+  if ($(window).width() >= 539){ /*21px narrower than media query*/
+    if($(document).scrollTop() > 0)
+    {
+        if($('#headernav').data('size') == 'big')
+        {
+            $('#headernav').data('size','small');
+            $('#headernav').stop().animate({
+                height:'55px'
+            },100);
+            $('.ast li a').css ({
+              'margin-top': '8px',
+              'padding-top': '9px',
+              'padding-bottom': '9px'
+            });
+            $('.navbar-brand').css ({
+              'padding': '15px'
+            });
+            $('h4').css ({
+              'font-size': '20px'
+            });
+        }
+    }
+    else
+    {
+        if($('#headernav').data('size') == 'small')
+        {
+            $('#headernav').data('size','big');
+            $('#headernav').stop().animate({
+                height:'80px'
+            },100);
+            $('.ast li a').css ({
+              'margin-top': '17px',
+              'padding-top': '12px',
+              'padding-bottom': '12px'
+            });
+            $('.navbar-brand').css ({
+              'padding': '25px'
+            });
+            $('h4').css ({
+              'font-size': '26px'
+            });
+        }  
+    }
+  }
+});
+</script>
+
+<script type="text/javascript" language="javascript">
+  var myString = "I am a full stack software developer endeavoring to make a difference in the world as an Internet entrepreneur.";
+  var myArray = myString.split("");
+  var loopTimer;
+  function frameLooper() {
+    if(myArray.length > 0) {
+      document.getElementById("typing").innerHTML += myArray.shift();
+    } else {
+      clearTimeout(loopTimer); 
+    }
+    loopTimer = setTimeout('frameLooper()',50);
+  }
+  setTimeout('frameLooper()', 1200);
+</script>
+
+<!--Infinite Looping Scroll-->
+<!--script type="text/javascript">
+$('document').ready(function() {
+    $(document).scroll(function(){
+      if (document.documentElement.clientHeight + $(window).scrollTop() >= $(document).height()) {
+        $(document).scrollTop(0);
+      }
+    });
+  });
+</script-->
+<!--script> 
+//must come after jquery 
+$(document).ready(function(){
+    $.localScroll();
+});
+</script-->
+
+<script src="js/bootstrap-scrollspy.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48764155-1', 'markleppa.com');
+    ga('send', 'pageview');
+
+</script>
+
+<script language="javascript" type="text/javascript">
+function parallax() {
+window.onscroll = function() {
+var speed1 = 1;
+var speed2 = 6;
+var speed3 = 12;
+document.body.style.backgroundPosition = (-window.pageXOffset / speed2) + "px " + (-window.pageYOffset/ speed2) + "px";
+document.getElementById("mid_bg").style.backgroundPosition = (-window.pageYOffset / speed1) + "px " + (-window.pageXOffset / speed1) + "px";
+}
+}
+
+</script>
+  
+</body></html>
