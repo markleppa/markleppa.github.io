@@ -53,6 +53,7 @@
  * @desc Scroll on both axes, to different values
  * @example $('div').scrollTo( { top: 300, left:'+=200' }, { axis:'xy', offset:-20 } );
  */
+ 
 ;(function( $ ){
 	
 	var $scrollTo = $.scrollTo = function( target, duration, settings ){
